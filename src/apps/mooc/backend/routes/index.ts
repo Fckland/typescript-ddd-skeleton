@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import glob from 'glob';
+import * as glob from 'glob';
 
 export function registerRoutes(router: Router): void {
 	const routes = glob.sync(`${__dirname}/**/*.route.*`);

@@ -1,11 +1,12 @@
 import { json, urlencoded } from 'body-parser';
-import compress from 'compression';
-import errorHandler from 'errorhandler';
-import express, { Request, Response } from 'express';
+import * as compress from 'compression';
+import * as errorHandler from 'errorhandler';
+import * as express from 'express';
+import { Request, Response } from 'express';
 import Router from 'express-promise-router';
-import helmet from 'helmet';
+import * as helmet from 'helmet';
 import * as http from 'http';
-import httpStatus from 'http-status';
+import * as httpStatus from 'http-status';
 
 import { registerRoutes } from './routes';
 
